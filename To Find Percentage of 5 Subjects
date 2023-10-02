@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() 
+{
+   int maths, physics, chemistry, english, hindi;
+   float percentage=0;
+   printf("Input the marks obtained in Mathematics : ");
+   scanf("%d", &maths);
+   printf("Input the marks obtained in Physics : ");
+   scanf("%d", &physics);
+   printf("Input the marks obtained in Chemistry : ");
+   scanf("%d", &chemistry);
+   printf("Input the marks obtained in English : ");
+   scanf("%d", &english);
+   printf("Input the marks obtained in Hindi : ");
+   scanf("%d", &hindi);
+   percentage =((maths+physics+chemistry+english+hindi)*100)/500;
+   printf("\nThe total marks of the student in terms of percentage is : %f", percentage, "%");
+   return 0;
+}
