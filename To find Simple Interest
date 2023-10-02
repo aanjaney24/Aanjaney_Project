@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() 
+{
+   double principle, rate, time, total_interest=0;
+   printf("Input the Principle amount\nRs. ");
+   scanf("%lf", &principle);
+   printf("Input rate of Interest\n");
+   scanf("%lf", &rate);
+   printf("Input the time duration of repayment in years\n");
+   scanf("%lf", &time);
+   total_interest = (principle*rate*time)/100;
+   printf("The total interest is %lf\n", total_interest);
+   return 0;
+}
