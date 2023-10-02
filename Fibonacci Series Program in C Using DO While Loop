@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main()
+int main()
 {
     int i=1,n,f,f1,f2;
     printf("Enter Number of Fibonacci Values Needed : ");
@@ -16,4 +16,5 @@ void main()
         f=f1+f2;
     }
     while(i<=n);
+    return 0;
 }
