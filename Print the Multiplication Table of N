@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() 
+{
+  int num, res=0;
+  printf("Enter the number: ");
+  scanf("%d", &num);
+  int count=1;
+  while(count<=10)
+  {
+    res=num*count;
+    printf("%d×%d=%d\n", num, count, res);
+    count++;
+  }
+     return 0;
+}
