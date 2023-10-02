@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main() 
+{
+    int input, power=2;
+    printf("Input the number\n");
+    scanf("%d", &input);
+    printf("N^1 = %d\n", input);
+    int result=input;
+    while(power<=3)
+    {
+        result=result*input;
+        printf("N^%d = %d\n", power, result);
+        power++;
+    }
+    return 0;
+}
