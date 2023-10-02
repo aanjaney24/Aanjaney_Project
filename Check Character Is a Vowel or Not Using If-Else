@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main() 
+{
+    char vowel;
+    printf("Input the alphabet\n");
+    scanf("%c", &vowel);
+    int flag=(int)vowel;
+    if(flag<=90)
+    flag = flag+32;
+    if(flag==97||flag==101||flag==105||flag==111||flag==117)
+    printf("The character is a vowel");
+    else
+    printf("The character is not a vowel");
+    return 0;
+}
