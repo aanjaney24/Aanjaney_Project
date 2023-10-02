@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main() {
+    int intData;
+    float floatData;
+    double doubleData;
+    char charData;
+    printf("Size of int: %zu bytes\n", sizeof(intData));
+    printf("Size of float: %zu bytes\n", sizeof(floatData));
+    printf("Size of double: %zu bytes\n", sizeof(doubleData));
+    printf("Size of char: %zu byte\n", sizeof(charData));
+    return 0;
+}
