@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() 
+{
+  int num, rev, rem=0;
+  printf("Enter the number: ");
+  scanf("%d", &num);
+  int count = num;
+  while(count>0)
+  {
+    rem=count%10;
+    rev=(rev*10)+rem;
+    count=count/10;
+  }
+      printf("The reversed number is: %d", rev);
+      return 0;
+}
