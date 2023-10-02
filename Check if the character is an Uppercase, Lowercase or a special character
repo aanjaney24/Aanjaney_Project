@@ -1,1 +1,15 @@
-
+#include<stdio.h>
+int main() 
+{
+    char character;
+    printf("Input the character\n");
+    scanf("%c", &character);
+    int flag=(int)character;
+    if(flag>=65&&flag<=90)
+    printf("The character is an Uppercase alphabet");
+    else if(flag>=97&&flag<=122)
+    printf("The character is a Lowercase alphabet");
+    else
+    printf("The character is a special character");
+    return 0;
+}
