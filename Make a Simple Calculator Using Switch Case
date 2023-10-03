@@ -1,0 +1,55 @@
+#include <stdio.h>
+int main() 
+{
+    char math_operator;
+    double num1, num2, flag=0, res=0;
+    printf("Enter an operator (+, -, *, /): ");
+    scanf("%c", &math_operator);
+    switch(math_operator)
+    {
+        case '+' :
+        flag=1;
+        break;
+        case '-' :
+        flag=2;
+        break;
+        case '*' :
+        flag=3;
+        break;
+        case '/' :
+        flag=4;
+        break;
+        default:
+        printf("ENTER A VALID OPERATOR!");
+        goto end;
+    }
+    printf("Input the first number\n");
+    scanf("%lf", &num1);
+    printf("%lf%c", num1, math_operator);
+    scanf("%lf", &num2);
+    if(flag==1)
+    {
+    res=num1+num2;
+    printf("%lf%c%lf=%lf", num1, math_operator, num2, res);
+    }
+    if(flag==2)
+    {
+    res=num1-num2;
+    printf("%lf%c%lf=%lf", num1, math_operator, num2, res);
+    }
+    if(flag==3)
+    {
+    res=num1*num2;
+    printf("%lf%c%lf=%lf", num1, math_operator, num2, res);
+    }
+    if(flag==4)
+    {
+        if(num2==0&&num1>0)
+        printf("Not defined");
+        else
+        res=num1/num2;
+        printf("%lf%c%lf=%lf", num1, math_operator, num2, res);
+    }
+    end :
+    return 0;
+}
