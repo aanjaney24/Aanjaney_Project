@@ -12,7 +12,7 @@ while(count1>0)
 count1 = count1/10;
 power++;
 }
-for(count2=0;count2>0;)    
+while(count2>0)   
 {    
 rem=count2%10;    
 sum=sum+pow(rem, power);    
