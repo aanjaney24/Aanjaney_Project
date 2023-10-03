@@ -1,0 +1,26 @@
+#include<stdio.h>  
+#include<math.h>
+int main()    
+{    
+int count1, count2,rem,sum=0,temp, power=0, n;
+printf("enter the number= ");    
+scanf("%d",&n);    
+count1=n;  
+count2=n;
+while(count1>0)
+{
+count1 = count1/10;
+power++;
+}
+for(count2=0;count2>0;)    
+{    
+rem=count2%10;    
+sum=sum+pow(rem, power);    
+count2=count2/10;    
+}    
+if(n==sum)    
+printf("It is an armstrong  number");    
+else    
+printf("It is not an armstrong  number");  
+return 0;  
+}
