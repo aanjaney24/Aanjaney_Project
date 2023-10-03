@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() 
+{
+    int num, rev, rem=0;
+    printf("Input the number\n");
+    scanf("%d", &num);
+    int count = num;
+    while(count>0)
+    {
+        rem=count%10;
+        rev=(rev*10)+rem;
+        count/=10;
+    }
+    if(rev==num)
+    printf("The number is a panindrome");
+    else
+    printf("The number is not a panindrome");
+    return 0;
+}
